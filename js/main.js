@@ -80,6 +80,11 @@ async function initPage() {
   if (path === '/testimonials' || path === '/testimonials.html') {
     await initTestimonialsPage();
   }
+
+  // Classes page
+  if (path === '/cloud-security/classes' || path === '/cloud-security/classes.html') {
+    await initClassesPage();
+  }
 }
 
 // ============================================
@@ -311,6 +316,48 @@ async function initTestimonialsPage() {
       </div>
     </div>
   `}).join('');
+}
+
+// ============================================
+// Classes Page
+// ============================================
+
+async function initClassesPage() {
+  const eventsData = await loadJSON('/data/speaking-events.json');
+  const container = document.getElementById('upcomingClassesGrid');
+
+  if (!container) return;
+
+  if (!eventsData || !eventsData.upcoming || eventsData.upcoming.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state" style="grid-column: 1 / -1;">
+        <p>No upcoming lectures or classes scheduled at this time.</p>
+        <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+          <a href="/contact">Contact me</a> for booking inquiries or custom training requests.
+        </p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = eventsData.upcoming.map(event => {
+    const date = new Date(event.date);
+    const formattedDate = date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    });
+
+    return `
+      <div class="event-card">
+        <div class="event-date">${formattedDate}</div>
+        <h3 class="event-title">${event.title}</h3>
+        <p class="event-location">${event.location}</p>
+        <p class="event-topic">${event.topic}</p>
+        ${event.link ? `<a href="${event.link}" target="_blank" class="btn btn-outline" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Learn More</a>` : ''}
+      </div>
+    `;
+  }).join('');
 }
 
 // ============================================

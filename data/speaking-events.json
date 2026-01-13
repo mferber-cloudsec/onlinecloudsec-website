@@ -1,4 +1,13 @@
 {
-  "upcoming": [],
+  "upcoming": [
+    {
+      "date": "2025-02-01",
+      "title": "TAISE Training",
+      "location": "Online",
+      "topic": "Trusted AI Safety Expert Certification",
+      "link": "https://www.taise.guru",
+      "type": "training"
+    }
+  ],
   "past": []
 }
