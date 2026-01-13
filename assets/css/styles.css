@@ -531,6 +531,12 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.testimonial-quote::after {
+  content: '"';
+  font-size: 1.5rem;
+  color: var(--primary-light);
+}
+
 .testimonial-author {
   font-weight: 600;
   color: var(--text-dark);
