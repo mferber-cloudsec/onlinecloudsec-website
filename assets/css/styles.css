@@ -288,6 +288,7 @@ img {
   width: 320px;
   height: 320px;
   object-fit: cover;
+  object-position: top;
   border-radius: 1rem;
   box-shadow: var(--shadow-lg);
 }
@@ -709,6 +710,8 @@ img {
   width: 100%;
   border-radius: 1rem;
   box-shadow: var(--shadow-lg);
+  object-fit: cover;
+  object-position: top;
 }
 
 .about-content h2 {

@@ -177,10 +177,11 @@ function renderTestimonialsCarousel(testimonials) {
 
   function renderTestimonial(index) {
     const t = testimonials[index];
+    const authorName = t.name || t.author || 'Anonymous';
     return `
       <div class="testimonial-card">
         <p class="testimonial-quote">${t.quote}</p>
-        <p class="testimonial-author">${t.author}</p>
+        <p class="testimonial-author">${authorName}</p>
         <p class="testimonial-role">${t.title}${t.company ? `, ${t.company}` : ''}</p>
       </div>
       ${testimonials.length > 1 ? `
@@ -296,18 +297,20 @@ async function initTestimonialsPage() {
     return;
   }
 
-  container.innerHTML = testimonialsData.testimonials.map(t => `
+  container.innerHTML = testimonialsData.testimonials.map(t => {
+    const authorName = t.name || t.author || 'Anonymous';
+    return `
     <div class="testimonial-card" style="margin-bottom: 2rem; text-align: left;">
       <p class="testimonial-quote" style="font-size: 1.125rem;">${t.quote}</p>
       <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
-        ${t.image ? `<img src="${t.image}" alt="${t.author}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">` : ''}
+        ${t.image ? `<img src="${t.image}" alt="${authorName}" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">` : ''}
         <div>
-          <p class="testimonial-author">${t.author}</p>
+          <p class="testimonial-author">${authorName}</p>
           <p class="testimonial-role">${t.title}${t.company ? `, ${t.company}` : ''}</p>
         </div>
       </div>
     </div>
-  `).join('');
+  `}).join('');
 }
 
 // ============================================
