@@ -1,3 +1,139 @@
 {
-  "testimonials": []
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "David Israel",
+      "title": "CISSP Information Security Manager",
+      "company": "Motorola Solutions",
+      "location": "Israel",
+      "quote": "Thank you for excellent interesting 2 days of training. Personally I'm glad that I had the chance to have a deeper understanding of cloud security, as it will become one of the most interesting security fields in the future. More than that, I'm happy that I had the chance to meet such talented colleagues in different industries with different aspects of security challenges. I will be happy to keep in touch.",
+      "course": "CCSK"
+    },
+    {
+      "id": 2,
+      "name": "Tanya Epstein",
+      "title": "Co-Founder and CTO",
+      "company": "Applango.com",
+      "quote": "Thank you very much for the course. I passed certification successfully and received certificate. It was a great pleasure.",
+      "course": "CCSK"
+    },
+    {
+      "id": 3,
+      "name": "Yossi Bibas",
+      "title": "Security Professional",
+      "company": "2bsecure",
+      "quote": "I would like to thank for the class, it was very interesting and insightful. Many thanks to Moshe and other participants.",
+      "course": "CCSK"
+    },
+    {
+      "id": 4,
+      "name": "Asaf Kusleski",
+      "title": "IT Auditor",
+      "company": "Hapoalim Bank",
+      "quote": "I would like to thank you for the CCSK class. The class was very professional and well delivered. The hands-on labs really contributed to the understanding of the material. The class provided me with tools and knowledge for dealing with cloud computing security challenges. Well done!",
+      "course": "CCSK"
+    },
+    {
+      "id": 5,
+      "name": "Omer Riff",
+      "title": "Technology Solutions Manager",
+      "company": "Israel Airport Authority",
+      "quote": "Last September, I had the privilege to participate in a CCSK plus course instructed by Mr. Moshe Ferber. Moshe, an experienced and knowledgeable information security advisor, led the course in a masterful way, following course theoretical concepts as well as hands-on labs to the point, providing answers to all questions raised by course participants, whether technical or methodological, in a respectful and kind manner. I would recommend this course to anyone, starting with professionals dealing directly with cloud computing security, to those merely seeking to broaden their knowledge in that field; I would HIGHLY recommend to enlist to a course led by Mr. Moshe Ferber.",
+      "course": "CCSK Plus",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "name": "Daniel Brudner",
+      "title": "Senior Security Architect",
+      "company": "CA Technologies",
+      "quote": "Thank you very much for the class, it was very interesting and useful. It is always good to experiment with new technologies.",
+      "course": "CCSK"
+    },
+    {
+      "id": 7,
+      "name": "Alexander Smirnov",
+      "title": "Sr. Director of Global Strategy Planning",
+      "company": "Mellanox Technologies",
+      "quote": "Thanks a lot for a professionally executed training and open information sharing. It was very useful experience for me. I will be glad to be in touch in future in next security related challenges.",
+      "course": "CCSK"
+    },
+    {
+      "id": 8,
+      "name": "Leon Kukovec",
+      "title": "Wireless Software Architect",
+      "company": "Accelera Mobile Broadband",
+      "quote": "Thank you! Definitely appreciated it, a very good overview as well as best practices.",
+      "course": "CCSK"
+    },
+    {
+      "id": 9,
+      "name": "Ronit Stern",
+      "title": "Team Leader, Information Security",
+      "company": "Cellcom",
+      "quote": "Thank you very much for a very enhancing and comprehensive class. Cloud computing encompasses many questions and challenges and after we completed CCSK class, we feel well prepared to ask the right questions and set security requirements. The hands-on labs illustrated the content we learned, and the fact that all examples were made on recent real world scenarios - made this class useful and relevant. Undoubtedly, we received knowledge that is mandatory for every information security professional and is even inspiring. BTW, it is amazing to comprehend how much content we managed to squeeze into such a short course.",
+      "course": "CCSK",
+      "featured": true
+    },
+    {
+      "id": 10,
+      "name": "Amit Bar-On",
+      "title": "Information Security Manager",
+      "company": "Mellanox",
+      "quote": "Very interesting, professional course and recommended to everyone that going to establish/migrate their foundation into the cloud (IaaS, PaaS, SaaS). Moshe is one of the best professionals that I met in this market place.",
+      "course": "CCSK",
+      "featured": true
+    },
+    {
+      "id": 11,
+      "name": "Haruhiko Kurita",
+      "title": "Senior Security Consultant",
+      "company": "NetOne Systems Ltd",
+      "location": "Japan",
+      "quote": "Today I got the CCSP exam and passed! The CCSP training was definitely helpful and without that, if we learn it only by textbook, I don't think to have passed for the first trial. Thank you so much for your supports.",
+      "course": "CCSP"
+    },
+    {
+      "id": 12,
+      "name": "Matjaz Jevsevar",
+      "title": "Government Official",
+      "company": "Ministry of Public Administration",
+      "location": "Slovenia",
+      "quote": "I participated in a CCSK course led by Mr. Moshe Ferber few days ago. The course was comprehensive, well-structured and conducted in a very professional manner. Moshe demonstrated a deep and extensive knowledge in the area of cloud computing security and an excellent didactic approach. I would recommend this course to all those interested in cloud computing concepts and practices and information security in general.",
+      "course": "CCSK",
+      "featured": true
+    },
+    {
+      "id": 13,
+      "name": "Anonymous",
+      "title": "Independent Consultant",
+      "company": "Confidential",
+      "quote": "I attended Moshe's CCSP Webex course in April. Moshe's experience and illustrations from real world made a lot of difference between reading a book or video based course and attending Moshe delivered live webinar. The interaction was so seamless that Webex delivered session was in no way less effective than face to face teaching thanks to Moshe's personal attention to each and every individual and clever use of the chat box. The sessions went beyond mere exam orientation, aimed at getting the fundamentals across and advanced concept simplified. Thanks Moshe. Cheers.",
+      "course": "CCSP"
+    },
+    {
+      "id": 14,
+      "name": "Sharon Kasper",
+      "title": "Security Professional",
+      "company": "Bank Hapoalim",
+      "quote": "Thank you very much Moshe for the interesting, fluent and enjoyable Cloud Security sessions on CISO course.",
+      "course": "CISO Training"
+    },
+    {
+      "id": 15,
+      "name": "Daniel Desages",
+      "title": "IT Security Analyst",
+      "company": "Imperva",
+      "quote": "Thanks a lot for the great course! It was interesting, pleasant and very professionally articulated. I especially liked how you gave real life examples and how you encouraged sharing experiences between colleagues from different backgrounds to illustrate aspects of the course.",
+      "course": "CCSK"
+    },
+    {
+      "id": 16,
+      "name": "Dragan Stevanovic",
+      "title": "IS Architect",
+      "company": "Allianz Technology",
+      "quote": "The CCSK training content combined with lot of practical advices from Moshe's experience is very useful for all of us. Moshe Ferber thank you again for the great training experience!!!",
+      "course": "CCSK"
+    }
+  ]
 }
