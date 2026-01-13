@@ -1,7 +1,19 @@
 # OnlineCloudSec Website - Project Brief
 
-**Version:** 2.0
+**Version:** 2.1
 **Last Updated:** January 2025
+
+---
+
+## IMPORTANT: Privacy & Security Guidelines
+
+**NEVER upload or commit the following to this repository:**
+- Personal email addresses or phone numbers
+- Private credentials or API keys
+- Any Personally Identifiable Information (PII)
+- Passwords or secrets
+
+Use the contact form on the website for inquiries. Public social links (LinkedIn, YouTube, etc.) are acceptable.
 
 ---
 

@@ -1,16 +1,4 @@
 {
-  "upcoming": [
-    {
-      "id": "taise-cohort-4",
-      "title": "TAISE Certification Training - Cohort #4",
-      "date": "2026-02-16",
-      "endDate": "2026-02-23",
-      "location": "See Security College, Ramat Gan, Israel",
-      "topic": "Trusted AI Safety Expert (CSA Official Certification)",
-      "type": "training",
-      "description": "3-day intensive TAISE certification course covering all 10 CSA modules. Includes exam token with 2 attempts.",
-      "link": ""
-    }
-  ],
+  "upcoming": [],
   "past": []
 }
