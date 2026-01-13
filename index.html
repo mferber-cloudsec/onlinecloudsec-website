@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moshe Ferber | Cloud Security Evangelist</title>
-  <meta name="description" content="Cloud security expert, TAISE trainer, and CSA Israel Chapter Chairman with 30+ years experience.">
+  <title>Moshe Ferber | Cloud Security Evangelist & AI Safety Expert</title>
+  <meta name="description" content="Cloud security expert, TAISE trainer, and CSA Israel Chapter Chairman with 30+ years experience in cybersecurity.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Moshe Ferber | Cloud Security">
+  <meta property="og:title" content="Moshe Ferber | Cloud Security Evangelist">
   <meta property="og:description" content="Cloud security expert, TAISE trainer, and CSA Israel Chapter Chairman with 30+ years experience.">
   <meta property="og:url" content="https://onlinecloudsec.com">
   <meta property="og:type" content="website">
@@ -15,47 +15,152 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Placeholder - site under construction -->
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #1e40af; }
-    p { font-size: 1.25rem; color: #64748b; margin-bottom: 2rem; }
-    .links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .links a {
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.2s;
-    }
-    .taise { background: #c8a03e; color: white; }
-    .taise:hover { background: #b8860b; }
-    .linkedin { background: #1e40af; color: white; }
-    .linkedin:hover { background: #1e3a8a; }
-  </style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Moshe Ferber</h1>
-    <p>Cloud Security Evangelist & AI Safety Expert</p>
-    <p style="font-size: 1rem; margin-bottom: 1rem;">Site coming soon...</p>
-    <div class="links">
-      <a href="https://www.taise.guru" class="taise">TAISE Knowledge Hub</a>
-      <a href="https://www.linkedin.com/in/mosheferber/" class="linkedin">LinkedIn</a>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Moshe Ferber</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/speaking" class="nav-link">Speaking</a></li>
+        <li><a href="/cloud-security" class="nav-link">Cloud Security</a></li>
+        <li><a href="/testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+        <li><a href="https://www.taise.guru" class="nav-cta" target="_blank">TAISE Hub →</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Moshe Ferber</h1>
+          <p class="hero-tagline">Cloud Security Evangelist & AI Safety Expert</p>
+          <p class="hero-description">
+            With 30+ years in cybersecurity, I help organizations navigate cloud security challenges
+            and prepare for the AI-driven future. Chairman of CSA Israel, certified trainer, and
+            passionate advocate for responsible technology adoption.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://www.taise.guru" class="btn btn-gold btn-lg" target="_blank">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              TAISE Training
+            </a>
+            <a href="/cloud-security" class="btn btn-primary btn-lg">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Cloud Security
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/assets/images/mo-portrait.jpg" alt="Moshe Ferber" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Credentials & Experience</h2>
+        <p>Decades of expertise in cloud security and cybersecurity leadership</p>
+      </div>
+      <div class="credentials-grid" id="credentialsGrid">
+        <!-- Loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Speaking -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Upcoming Speaking Engagements</h2>
+        <p>Sharing insights at conferences and events worldwide</p>
+      </div>
+      <div class="events-grid" id="eventsGrid">
+        <!-- Loaded from JSON -->
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="/speaking" class="btn btn-outline">View All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>What People Say</h2>
+        <p>Feedback from clients, students, and conference attendees</p>
+      </div>
+      <div class="testimonials-container" id="testimonialsContainer">
+        <!-- Loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); color: white;">
+    <div class="container text-center">
+      <h2 style="color: white; margin-bottom: 1rem;">Ready to Strengthen Your Cloud Security?</h2>
+      <p style="opacity: 0.9; max-width: 600px; margin: 0 auto 2rem;">
+        Whether you need training, consulting, or a keynote speaker, let's discuss how I can help your organization.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/contact" class="btn btn-gold btn-lg">Get in Touch</a>
+        <a href="https://www.taise.guru" class="btn btn-lg" style="background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.3);" target="_blank">
+          Explore TAISE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">Moshe Ferber</div>
+        <ul class="footer-links">
+          <li><a href="/about">About</a></li>
+          <li><a href="/speaking">Speaking</a></li>
+          <li><a href="/cloud-security">Cloud Security</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/mosheferber/" target="_blank" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLrsvn13Tgp7RJMEw5q3sy9tcvxOl1wvJi" target="_blank" aria-label="YouTube">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="https://www.taise.guru" target="_blank" aria-label="TAISE Hub">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Moshe Ferber. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
