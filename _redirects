@@ -1,23 +1,29 @@
 # Old WordPress URLs → New locations
 /about/              /about.html           301
-/about/lectures/     /cloud-security/lectures.html  301
+/about/lectures/     /cloud-security/classes.html  301
 /about/classes/      /cloud-security/classes.html   301
 /testimonials/       /testimonials.html    301
-/speaking-schedule/  /speaking.html        301
+/speaking-schedule/  /cloud-security/classes.html  301
 /publications/       /cloud-security/publications.html  301
 /gallery/            /about.html           301
 /contact/            /contact.html         301
 
 # Clean URLs (no .html extension)
 /about               /about.html           200
-/speaking            /speaking.html        200
 /contact             /contact.html         200
 /testimonials        /testimonials.html    200
 
-# TAISE section
-/taise               /taise/index.html     200
-/taise/              /taise/index.html     200
+# Redirects for removed pages
+/speaking            /cloud-security/classes.html  301
+/speaking.html       /cloud-security/classes.html  301
+/taise               https://www.taise.guru        301
+/taise/              https://www.taise.guru        301
+/cloud-security      /cloud-security/classes.html  301
+/cloud-security/     /cloud-security/classes.html  301
+/cloud-security/lectures  /cloud-security/classes.html  301
+/cloud-security/lectures.html  /cloud-security/classes.html  301
+/cloud-security/index.html  /cloud-security/classes.html  301
 
-# Cloud security section
-/cloud-security      /cloud-security/index.html  200
-/cloud-security/     /cloud-security/index.html  200
+# Cloud security section clean URLs
+/cloud-security/classes      /cloud-security/classes.html   200
+/cloud-security/publications /cloud-security/publications.html  200
