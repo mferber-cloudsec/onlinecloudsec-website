@@ -1,11 +1,25 @@
 {
   "upcoming": [
     {
-      "date": "2025-02-01",
-      "title": "TAISE Training",
-      "location": "Online",
-      "topic": "Trusted AI Safety Expert Certification",
-      "link": "https://www.taise.guru",
+      "date": "2025-02-16",
+      "endDate": "2025-02-23",
+      "title": "TAISE Certification Official Class",
+      "location": "Tel Aviv, Israel",
+      "topic": "Cloud Security Alliance TAISE certification special preview class. Includes two exam tokens.",
+      "format": "Frontal only (Hebrew)",
+      "dates": "Feb 16, 17, 23",
+      "link": "https://www.see-security.com/course/advanced-plus/?ContentID=69743",
+      "type": "training"
+    },
+    {
+      "date": "2025-02-19",
+      "endDate": "2025-02-26",
+      "title": "TAISE Certification Official Class",
+      "location": "Tel Aviv, Israel",
+      "topic": "Cloud Security Alliance TAISE certification special preview class. Includes two exam tokens.",
+      "format": "Frontal only (Hebrew)",
+      "dates": "Feb 19, 25, 26",
+      "link": "https://www.see-security.com/course/advanced-plus/?ContentID=69743",
       "type": "training"
     }
   ],

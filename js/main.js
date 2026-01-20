@@ -146,8 +146,7 @@ function renderUpcomingEvents(events) {
   }
 
   container.innerHTML = events.map(event => {
-    const date = new Date(event.date);
-    const formattedDate = date.toLocaleDateString('en-US', {
+    const displayDate = event.dates || new Date(event.date).toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
       year: 'numeric'
@@ -155,11 +154,12 @@ function renderUpcomingEvents(events) {
 
     return `
       <div class="event-card">
-        <div class="event-date">${formattedDate}</div>
+        <div class="event-date">${displayDate}</div>
         <h3 class="event-title">${event.title}</h3>
         <p class="event-location">${event.location}</p>
+        ${event.format ? `<p class="event-format" style="font-size: 0.875rem; color: var(--text-light); margin-bottom: 0.5rem;">${event.format}</p>` : ''}
         <p class="event-topic">${event.topic}</p>
-        ${event.link ? `<a href="${event.link}" target="_blank" class="btn btn-outline" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Learn More</a>` : ''}
+        ${event.link ? `<a href="${event.link}" target="_blank" class="btn btn-outline" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Register Now</a>` : ''}
       </div>
     `;
   }).join('');
@@ -341,8 +341,7 @@ async function initClassesPage() {
   }
 
   container.innerHTML = eventsData.upcoming.map(event => {
-    const date = new Date(event.date);
-    const formattedDate = date.toLocaleDateString('en-US', {
+    const displayDate = event.dates || new Date(event.date).toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
       year: 'numeric'
@@ -350,11 +349,12 @@ async function initClassesPage() {
 
     return `
       <div class="event-card">
-        <div class="event-date">${formattedDate}</div>
+        <div class="event-date">${displayDate}</div>
         <h3 class="event-title">${event.title}</h3>
         <p class="event-location">${event.location}</p>
+        ${event.format ? `<p class="event-format" style="font-size: 0.875rem; color: var(--text-light); margin-bottom: 0.5rem;">${event.format}</p>` : ''}
         <p class="event-topic">${event.topic}</p>
-        ${event.link ? `<a href="${event.link}" target="_blank" class="btn btn-outline" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Learn More</a>` : ''}
+        ${event.link ? `<a href="${event.link}" target="_blank" class="btn btn-outline" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.875rem;">Register Now</a>` : ''}
       </div>
     `;
   }).join('');
