@@ -1,0 +1,9 @@
+customHeaders:
+  - pattern: /data/speaking-events.json
+    headers:
+      - key: Access-Control-Allow-Origin
+        value: "https://www.taise.guru"
+      - key: Access-Control-Allow-Methods
+        value: "GET"
+      - key: Cache-Control
+        value: "public, max-age=3600"
