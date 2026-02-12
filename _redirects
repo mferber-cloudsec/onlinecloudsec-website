@@ -5,7 +5,8 @@
 /testimonials/       /testimonials.html    301
 /speaking-schedule/  /cloud-security/classes.html  301
 /publications/       /cloud-security/publications.html  301
-/gallery/            /about.html           301
+/gallery/            /cloud-security/gallery.html  301
+/gallery             /cloud-security/gallery.html  301
 /contact/            /contact.html         301
 
 # Clean URLs (no .html extension)
@@ -27,3 +28,4 @@
 # Cloud security section clean URLs
 /cloud-security/classes      /cloud-security/classes.html   200
 /cloud-security/publications /cloud-security/publications.html  200
+/cloud-security/gallery      /cloud-security/gallery.html   200
